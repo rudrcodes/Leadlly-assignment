@@ -2,7 +2,7 @@ import Typewriter from 'typewriter-effect';
 
 const Section1 = () => {
     return (
-        <div className="h-[83vh]  flex justify-center  items-center relative">
+        <div className="h-[83vh] w-[1130px]  flex justify-center  items-center relative">
             <div className=" mb-32 mr-20 ">
                 <h1 className="text-[42px] font-[700] text-[#202020]">Leading Enterprise </h1>
                 <h1 className="text-[42px] font-[700] text-[#202020]">Ecommerce Platform in India</h1>
@@ -36,10 +36,18 @@ const Section1 = () => {
                     SCHEDULE A DEMO
                 </button>
             </div>
-            <img
-                src="https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/657809dbbcebf27febe432cc/ecommerce-banner.png"
-                className="h-[555px] w-[384px] mt-2 ml-3"
-            />
+            <div className='relative '>
+                <img
+                    src="https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/657809dbbcebf27febe432cc/ecommerce-banner.png"
+                    className="h-[574px] w-[384px] mt-2 ml-3 z-[1]"
+                />
+                <img
+                    src="/bgblob.svg"
+                    // className="  absolute  rotate-[270deg]	"
+                    className=" top-0  left-0 absolute z-[-1000]"
+                />
+
+            </div>
         </div>
     )
 }
