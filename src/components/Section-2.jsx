@@ -77,10 +77,10 @@ const Section2 = () => {
                         />
                     </div>
                 </div>
-                <div className="flex-1 bg-green-300 flex flex-col gap-2 items-end pr-20 mt-20">
+                <div className="flex-1  flex flex-col gap-2 items-end pr-20 mt-20">
                     <div className="text-[36px] font-[700] text-right">Empowering Brands <br />Across the Globe</div>
 
-                    <p className="text-[18px] font-[500] text-right w-[458px] bg-red-900 ">
+                    <p className="text-[18px] font-[500] text-right w-[458px]  ">
                         StoreHippo ecommerce platform builds extraordinary solutions to power brands across 15 countries and 30+ industries. Add your brand to the long list of brands that trust StoreHippo.
                     </p>
                 </div>

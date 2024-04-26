@@ -1,8 +1,22 @@
 import clsx from 'clsx';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoMdMenu } from 'react-icons/io'
 
 const BurgerMenu = () => {
+    // fetch user details from cookie
+    useEffect(() => {
+        const getCookie = async () => {
+            try {
+                const res = await axios.get(`http://localhost:5000/user/getCookie`)
+                console.log("res: ", res)
+            } catch (error) {
+                console.log("Error in cookie getting: ", error)
+
+            }
+        }
+        getCookie()
+
+    }, [])
     const [open, setOpen] = useState(false);
     return (
         <div className='flex flex-col justify-center items-center  '>
@@ -35,7 +49,9 @@ const BurgerMenu = () => {
                     Contact Sales
                 </button>
                 <button className='hover:text-[#7DB434]'>
-                    Login to your store
+                    <a href="/UserAuthentication">
+                        Login to your store
+                    </a>
                 </button>
             </div>
         </div >
